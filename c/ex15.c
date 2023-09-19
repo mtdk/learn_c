@@ -21,6 +21,10 @@ int main(int argc, char *argv[])
 	int *cur_age = ages;
 	char **cur_name = names;
 
+	//printf("*cur_name: %p\n", *cur_name);
+	//printf("**cur_name: %d\n", **cur_name);
+	//printf("---\n");
+
 	// second way using pointers
 	for(i = 0; i < count; i++){
 		printf("%s is %d years old.\n", *(cur_name + i), *(cur_age + i));
