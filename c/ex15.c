@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 	//printf("*cur_name: %p\n", *cur_name);
 	//printf("**cur_name: %d\n", **cur_name);
 	//printf("---\n");
+	//printf("sizeof *name %ld\n", sizeof(*names));
 
 	// second way using pointers
 	for(i = 0; i < count; i++){
