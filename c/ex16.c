@@ -1,3 +1,4 @@
+/* 结构体和指向结构体的指针 */
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
