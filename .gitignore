@@ -54,3 +54,6 @@ dkms.conf
 # Other files
 *.dat
 *.swp
+
+# Other folders
+.DS_Store
