@@ -33,3 +33,45 @@
 34
 
 */
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float meliage;
+    float meliage_momery;
+    int wait_time;
+    float wait_momey;
+    float total_momey;
+
+    scanf("%f %d", &meliage, &wait_time);
+
+    if (meliage > 3 && meliage <= 10)
+    {
+        // 大于3公里小于10公里
+        meliage_momery = (meliage - 3) * 2 + 10;
+    }
+    else if (meliage > 10)
+    {
+        meliage_momery = (meliage - 10) * 3 + (10 - 3) * 2 + 10;
+    }
+    else
+    {
+        meliage_momery = 10;
+    }
+
+    if (wait_time >= 5)
+    {
+        wait_momey = wait_time / 5 * 2;
+    }
+    else
+    {
+        wait_momey = 0;
+    }
+
+    total_momey = meliage_momery + wait_momey;
+    // total_momey = round(total_momey);
+
+    printf("%.0f\n", total_momey);
+
+    return 0;
+}

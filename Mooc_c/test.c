@@ -3,8 +3,10 @@ int main()
 {
     int a, b, c, d;
 
-    scanf("%d %d %d %d", &a, &b, &c, &d);
-    printf("Sum = %d", a + b + c + d);
-    printf("Average = %0.1f", (a + b + c + d) / 4.0);
+    // scanf("%d %d %d %d", &a, &b, &c, &d);
+    // printf("Sum = %d", a + b + c + d);
+    // printf("Average = %0.1f", (a + b + c + d) / 4.0);
+
+    printf("%d\n", 25 / 5 * 2);
     return 0;
 }
