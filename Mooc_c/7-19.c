@@ -24,6 +24,53 @@
 
 */
 #include <stdio.h>
-int main(){
-    
+int main()
+{
+    int year;
+    int month;
+    int day;
+    int days = 0;
+
+    scanf("%d/%d/%d", &year, &month, &day);
+
+    if (month == 1)
+    {
+        printf("%d\n", day);
+    }
+    else
+    {
+        for (int i = 1; i < month; i++)
+        {
+            switch (i)
+            {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                days += 31;
+                break;
+            case 2:
+                days += 28;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                days += 30;
+                break;
+            }
+        }
+    }
+    days += day;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+        days += 1;
+    }
+
+    printf("%d\n", days);
+
+    return 0;
 }
