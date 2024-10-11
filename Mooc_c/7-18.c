@@ -68,7 +68,6 @@ int main()
     }
 
     total_momey = meliage_momery + wait_momey;
-    // total_momey = round(total_momey);
 
     printf("%.0f\n", total_momey);
 
