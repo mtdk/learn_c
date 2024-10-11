@@ -67,7 +67,10 @@ int main()
     days += day;
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
     {
-        days += 1;
+        if (month > 2)
+        {
+            days += 1;
+        }
     }
 
     printf("%d\n", days);
