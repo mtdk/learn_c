@@ -4,20 +4,30 @@
 c = 5*(f-32)/9
 */
 #include <stdio.h>
-int main(void){
+int main(void)
+{
     // fahr表示华氏温度，celsuis表示摄氏温度，lower为华氏温度下限，upper为华氏温度上限
-    int fahr,lower,upper;
+    int fahr, lower, upper;
     double celsuis;
 
     printf("Enter lower:");
-    scanf("%d",&lower);
+    scanf("%d", &lower);
     printf("Enter upper:");
-    scanf("%d",&upper);
+    scanf("%d", &upper);
 
     // 判断输入数据的合法性
-    if(lower<=upper){
-
-    }else{
+    if (lower <= upper)
+    {
+        printf("fahr celsuis\n"); // 输出温度转换表的表头
+        /*温度重复转换：华氏温度从lower开始，到upper结束，每次增加1华氏度*/
+        for (fahr = lower; fahr <= upper; fahr++)
+        {
+            celsuis = (5.0 / 9.0) * (fahr - 32); // 温度转换计算
+            printf("%4d%6.1f\n", fahr, celsuis); // 输出
+        }
+    }
+    else
+    {
         printf("Invalid Value!\n");
     }
 
