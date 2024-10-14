@@ -4,9 +4,10 @@
 #include <stdio.h>
 int main(void)
 {
-    int x, y;
+    double x, y;
 
-    scanf("%d", &x);
+    printf("Enter x:");
+    scanf("%lf", &x);
     if (x > 0)
     {
         y = 1 / x;
@@ -16,7 +17,7 @@ int main(void)
         y = 0;
     }
 
-    printf("%.1f\n", y);
+    printf("f(%.1f)=%.1f\n", x, y);
 
     return 0;
 }

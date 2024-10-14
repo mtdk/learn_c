@@ -23,16 +23,30 @@ int main()
     //     break;
     // }
 
-    int i = 1;
-    switch (i % 3)
+    // int i = 1;
+    // switch (i % 3)
+    // {
+    // case 0:
+    //     printf("zero");
+    // case 1:
+    //     printf("one");
+    // case 2:
+    //     printf("two");
+    // }
+
+    int n;
+    printf("请输入同学的数量 n:");
+    scanf("%d", &n);
+
+    printf("站在第一列的同学编号是：\n");
+    for (int i = 1; i <= n; i++)
     {
-    case 0:
-        printf("zero");
-    case 1:
-        printf("one");
-    case 2:
-        printf("two");
+        if (i % 2 != 0)
+        {
+            printf("%d\n", i);
+        }
     }
-    
+    printf("\n");
+
     return 0;
 }
