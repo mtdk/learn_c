@@ -54,7 +54,10 @@ dkms.conf
 # Other files
 *.dat
 *.swp
+*.txt
 
 # Other folders
 .DS_Store
 .vscode
+.idea/
+cmake-build-debug/
