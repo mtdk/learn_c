@@ -19,12 +19,8 @@ int main(void)
 
         for (int i = 1; i <= n; i++)
         {
-            sum = sum + tmp;
-            printf("%f = %f + %f\n", sum, sum, tmp);
-            flag = -flag;
-            denominator = denominator + 2;
-            tmp = flag * i / denominator;
-            printf("%f = %d * %d / %d\n", tmp, flag, i, denominator);
+            
+
         }
         printf("sum=%f\n", sum);
     }
