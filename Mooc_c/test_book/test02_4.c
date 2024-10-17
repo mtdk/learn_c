@@ -6,20 +6,18 @@
 int main(void)
 {
 
-    int n, i;
-    int flag, denominator;
-    double sum, tmp;
+    int n;
+    int flag = 1;
+    int denominator = 1;
+    double tmp = 1;
+    double sum = 0;
 
     printf("Enter n:");
     scanf("%d", &n);
     if (n > 0)
     {
-        flag = 1;
-        denominator = 1;
-        tmp = 1;
-        sum = 0;
 
-        for (i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i++)
         {
             sum = sum + tmp;
             printf("%f = %f + %f\n", sum, sum, tmp);
