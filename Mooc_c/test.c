@@ -34,19 +34,36 @@ int main()
     //     printf("two");
     // }
 
-    int n;
-    printf("请输入同学的数量 n:");
-    scanf("%d", &n);
+    // int n;
+    // printf("请输入同学的数量 n:");
+    // scanf("%d", &n);
 
-    printf("站在第一列的同学编号是：\n");
-    for (int i = 1; i <= n; i++)
-    {
-        if (i % 2 != 0)
-        {
-            printf("%d\n", i);
-        }
+    // printf("站在第一列的同学编号是：\n");
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     if (i % 2 != 0)
+    //     {
+    //         printf("%d\n", i);
+    //     }
+    // }
+    // printf("\n");
+
+    // int sum = 0;
+    // for (int i = 0; i < 10; i++)
+    // {
+    //     if (i % 2) continue;
+    //     printf("%d mod 2 = %d\n",i,i%2);
+    //     sum += i;
+    //     printf("sum = %d\n",sum);
+    // }
+    // printf("%d\n", sum);
+
+    int sum = 0;
+    for(int i=0;i<10;i++){
+        if(i%2) break;
+        sum+=i;
     }
-    printf("\n");
+    printf("%d\n",sum);
 
     return 0;
 }
