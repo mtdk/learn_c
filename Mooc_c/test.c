@@ -58,12 +58,21 @@ int main()
     // }
     // printf("%d\n", sum);
 
-    int sum = 0;
-    for(int i=0;i<10;i++){
-        if(i%2) break;
-        sum+=i;
-    }
-    printf("%d\n",sum);
+    // int sum = 0;
+    // for(int i=0;i<10;i++){
+    //     if(i%2) break;
+    //     sum+=i;
+    // }
+    // printf("%d\n",sum);
+    int a['A'];
 
+    int len = sizeof(a) / sizeof(a[0]);
+    for (int i = 0; i < len; i++)
+    {
+        a[i] = i;
+    }
+
+    printf("%d\n", a[5]);
+    printf("a[] sizeof = %d\n", len);
     return 0;
 }
