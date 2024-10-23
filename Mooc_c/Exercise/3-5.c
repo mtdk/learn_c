@@ -20,7 +20,7 @@ int main(void)
     a = pow(abs(x2 - x1), 2) + pow(abs(y2 - y1), 2);
     b = pow(abs(x3 - x2), 2) + pow(abs(y3 - y2), 2);
     c = pow(abs(x1 - x3), 2) + pow(abs(y1 - y3), 2);
-    printf("a = %f b = %f c = %f\n",a,b,c);
+    printf("a = %f b = %f c = %f\n", a, b, c);
     if ((a + b) > c && (b + c) > a && (c + a) > b)
     {
         perimeter = a + b + c;
