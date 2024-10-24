@@ -12,6 +12,7 @@ int main(void)
 {
     int i, limit, m;
     printf("Enter a number:");
+    scanf("%d", &m);
     if (m < 1)
     {
         printf("No!\n");
@@ -39,4 +40,6 @@ int main(void)
             printf("No!\n");
         }
     }
+
+    return 0;
 }
