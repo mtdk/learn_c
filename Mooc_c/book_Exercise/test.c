@@ -79,17 +79,71 @@ int main()
     //     printf("%d#", num);
     // }
 
-    char ch;
-    int i;
-    for (i = 1; i <= 6; i++)
+    // char ch;
+    // int i;
+    // for (i = 1; i <= 6; i++)
+    // {
+    //     ch = getchar();
+    //     if (ch >= 'a' && ch <= 'z')
+    //         ch = (ch + 5 - 'a') % 26 + 'a';
+    //     else if (ch >= '0' && ch <= '9')
+    //         ch = (ch + 2 - '0') % 20 + '0';
+    //     putchar(ch);
+    // }
+
+    // int i, j, k = 0, m = 0;
+    // for (i = 0; i < 2; i++)
+    // {
+    //     k = 0;
+    //     for (j = 0; j < 3; j++)
+    //         k++;
+    //     m = m + k;
+    // }
+    // printf("k=%d, m=%d\n", k, m);
+
+    // int i, j, n;
+    // scanf("%d", &n);
+    // for (i = n - 1; i >= 0; i--)
+    // {
+    //     for (j = 1; j <= n; j++)
+    //     {
+    //         printf("%4d", i * 4 + j);
+    //     }
+    //     printf("\n");
+    // }
+
+    // int i, j, n;
+    // scanf("%d", &n);
+    // for (i = 1; i <= n; i++)
+    // {
+    //     for (j=0;j<n-i;j++)
+    //     {
+    //         printf(" ");
+    //     }
+    //     for (j=n-i;j<n+i-1;j++)
+    //     {
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+    int digit, number, pow, t_number;
+    scanf("%d", &number);
+    t_number = number;
+    pow = 1;
+    while (t_number >= 10)
     {
-        ch = getchar();
-        if (ch >= 'a' && ch <= 'z')
-            ch = (ch + 5 - 'a') % 26 + 'a';
-        else if (ch >= '0' && ch <= '9')
-            ch = (ch + 2 - '0') % 20 + '0';
-        putchar(ch);
+        pow = pow * 10;
+        t_number = t_number / 10;
+        printf("%d %d\n", pow, t_number);
     }
+    // while (pow >= 1)
+    // {
+    //     digit = t_number;
+    //     number = 0;
+    //     pow = pow / 10;
+    //     printf("%d ", digit);
+    // }
 
     return 0;
 }
