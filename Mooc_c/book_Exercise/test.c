@@ -135,15 +135,14 @@ int main()
     {
         pow = pow * 10;
         t_number = t_number / 10;
-        printf("%d %d\n", pow, t_number);
     }
-    // while (pow >= 1)
-    // {
-    //     digit = t_number;
-    //     number = 0;
-    //     pow = pow / 10;
-    //     printf("%d ", digit);
-    // }
+    while (pow >= 1)
+    {
+        digit = number / pow;   // 获取当前位数字
+        number = number % pow;  // 去掉当前位数字
+        pow = pow / 10;         // 移动到下一位
+        printf("%d ", digit);   // 输出当前位数字
+    }
 
     return 0;
 }
